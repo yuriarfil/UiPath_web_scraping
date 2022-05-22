@@ -1,0 +1,241 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="890.666666666667,3568.66666666667" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="68">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="900.666666666667,3504" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="858.666666666667,3412" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="824.666666666667,3326" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Default="https://www.tokopedia.com/" Name="strURL" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" AutoSave="False" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="782.666666666667,3234" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="Item_List.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="748.666666666667,2957.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="sd:DataTable" Name="dataRange" />
+                      <Variable x:TypeArguments="x:Int32" Name="lisTT" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="706.666666666667,172" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" SaveTo="[dataRange]" VisibleOnly="False" />
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[lisTT]" DataTable="[dataRange]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="706.666666666667,2653.33333333333" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                      <ui:ForEachRow.Body>
+                        <ActivityAction x:TypeArguments="sd:DataRow">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="672.666666666667,2538" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:String" Name="valU" />
+                              <Variable x:TypeArguments="x:String" Name="outP" />
+                              <Variable x:TypeArguments="x:String" Name="outPP" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="630.666666666667,256" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                              <ui:CommentOut.Body>
+                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,177.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[CurrentRow(0)]" />
+                                </Sequence>
+                              </ui:CommentOut.Body>
+                            </ui:CommentOut>
+                            <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Firefox: New Tab" sap:VirtualizedContainerService.HintSize="630.666666666667,2150" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="WindowMessages" ScopeGuid="2098ccb2-8cce-45e9-928f-bd35c1fd5625" Version="V1">
+                              <uix:NApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="x:Object">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                  </ActivityAction.Argument>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="596.666666666667,1932" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="554.666666666667,1837.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="512.666666666667,83.3333333333333" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[strURL]" Version="V1" />
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="512.666666666667,220" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="2098ccb2-8cce-45e9-928f-bd35c1fd5625" Text="[CurrentRow(0).ToString + &quot;[k(enter)]&quot;]" Version="V1">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://www.tokopedia.com/" DesignTimeRectangle="422, 197, 1076, 63" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='css-ubsgp5 e110g5pc0' aaname='' /&gt;" Guid="65552456-e55b-4c75-9221-5c44146a0883" ImageBase64="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" InformativeScreenshot="e9bb17752202aaabf717a4612e667cdf.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Situs Jual Beli Online Terlengkap, Mudah &amp;amp; Aman | Tokopedia' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="512.666666666667,22" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                                      <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="512.666666666667,138" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="90" Version="V1" />
+                                      <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="512.666666666667,22" sap2010:WorkflowViewState.IdRef="Delay_6" />
+                                      <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Item'&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Price'&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column css-selector='.css-1b6t4dn' name='Column0' attr='text' /&gt;&lt;column css-selector='.css-1ksb19c' name='Column1' attr='text' /&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="512.666666666667,158.666666666667" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="2098ccb2-8cce-45e9-928f-bd35c1fd5625" Version="V1">
+                                        <uix:NExtractData.Target>
+                                          <uix:TargetAnchorable DesignTimeRectangle="79, -1994, 1785, 8675" FriendlyName="'FilterKategoriOlahragaS…'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='zeus-root' tag='DIV' /&gt;" Guid="b6af8ff0-5184-467a-9c2a-823a7b22ff2d" InformativeScreenshot="6a44f7bb6f44a9ddebf044cca5e27ce2.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Jual tiparts | Tokopedia' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                        </uix:NExtractData.Target>
+                                      </uix:NExtractData>
+                                      <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="512.666666666667,858.666666666667" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_4" ResizeWindow="None" WorkbookPath="Output.xlsx">
+                                        <ueab:ExcelApplicationCard.Body>
+                                          <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                            </ActivityAction.Argument>
+                                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="478.666666666667,582" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ueab:WriteRangeX Destination="[Excel.Sheet(CurrentRow(0).ToString)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="436.666666666667,162" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[ExtractDataTable]" />
+                                              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436.666666666667,285.333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                                                <ui:CommentOut.Body>
+                                                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,206.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,114.666666666667" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="[Excel.Sheet(CurrentRow(0).ToString).ToString]" WorkbookPath="DataB.xlsx" />
+                                                  </Sequence>
+                                                </ui:CommentOut.Body>
+                                              </ui:CommentOut>
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </ueab:ExcelApplicationCard.Body>
+                                      </ueab:ExcelApplicationCard>
+                                    </Sequence>
+                                  </Sequence>
+                                </ActivityAction>
+                              </uix:NApplicationCard.Body>
+                              <uix:NApplicationCard.TargetApp>
+                                <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Firefox" IconBase64="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" InformativeScreenshot="7b19d190c5c14440f91f4505b25566f5.png" Selector="&lt;html app='firefox.exe' url='https://www.tokopedia.com/' /&gt;" Url="[strURL]" />
+                              </uix:NApplicationCard.TargetApp>
+                            </uix:NApplicationCard>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEachRow.Body>
+                    </ui:ForEachRow>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>
